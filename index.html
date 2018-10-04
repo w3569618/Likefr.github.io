@@ -1,1 +1,42 @@
-fr萌萌哒
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>左边淡入</title>
+<style>
+.div {
+	width:300px;
+	height:200px;
+	margin:100px auto;
+	background:url(http://www.100sucai.com/img/demo/1373.png)
+}
+#animation {
+-webkit-animation:fadeInLeft 1s .2s ease both;
+-moz-animation:fadeInLeft 1s .2s ease both;
+}
+@-webkit-keyframes fadeInLeft {
+0% {
+opacity:0;
+-webkit-transform:translateX(-20px)
+}
+100% {
+opacity:1;
+-webkit-transform:translateX(0)
+}
+}
+@-moz-keyframes fadeInLeft {
+0% {
+opacity:0;
+-moz-transform:translateX(-20px)
+}
+100% {
+opacity:1;
+-moz-transform:translateX(0)
+}
+}
+</style>
+</head>
+<body>
+<div id="animation" class="div"></div>
+</body>
+</html>
